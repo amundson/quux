@@ -4,6 +4,10 @@ set(QUUX_VERSION_MAJOR 1)
 set(QUUX_VERSION_MINOR 0)
 set(QUUX_VERSION "${QUUX_VERSION_MAJOR}.${QUUX_VERSION_MINOR}")
 
+find_package(Garply 1.0 EXACT REQUIRED CONFIG)
+include_directories(${GARPLY_INCLUDE_DIR})
+link_directories(${GARPLY_LIB_DIR})
+
 set(INCLUDE_INSTALL_DIR include/ CACHE PATH "install directory")
 set(LIB_INSTALL_DIR lib/ CACHE PATH "lib directory")
 
