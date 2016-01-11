@@ -1,0 +1,2 @@
+const int quux_version_major = @QUUX_VERSION_MAJOR@;
+const int quux_version_minor = @QUUX_VERSION_MINOR@;
