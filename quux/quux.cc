@@ -24,7 +24,7 @@ Quux::quuxifier() const
               << " invoked\n";
 
     Garply garply;
-    int garply_version = garply.garplinator();
+    int garply_version = garply.garplinate();
 
     if(garply_version != quux_version) {
         throw std::runtime_error("Quux found an incompatible version of Garply.");
