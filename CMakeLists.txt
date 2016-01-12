@@ -11,7 +11,7 @@ link_directories(${GARPLY_LIB_DIR})
 set(INCLUDE_INSTALL_DIR include/ CACHE PATH "install directory")
 set(LIB_INSTALL_DIR lib/ CACHE PATH "lib directory")
 
-include_directories(${QUUX_SOURCE_DIR})
+include_directories(BEFORE ${QUUX_SOURCE_DIR})
 enable_testing()
 
 include(CMakePackageConfigHelpers)
