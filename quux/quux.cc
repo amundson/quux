@@ -20,7 +20,7 @@ int
 Quux::quuxify() const
 {
     int quux_version = get_version();
-    std::cout << "Quux::quuxifier version " << quux_version
+    std::cout << "Quux::quuxify version " << quux_version
               << " invoked\n";
 
     Garply garply;
