@@ -9,7 +9,7 @@ private:
 public:
     Quux();
     int get_version() const;
-    int quuxifier() const;
+    int quuxify() const;
 };
 
 #endif // QUUX_H_

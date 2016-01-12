@@ -17,7 +17,7 @@ Quux::get_version() const
 }
 
 int
-Quux::quuxifier() const
+Quux::quuxify() const
 {
     int quux_version = get_version();
     std::cout << "Quux::quuxifier version " << quux_version

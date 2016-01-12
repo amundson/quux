@@ -14,7 +14,7 @@ bool
 test_quuxifier()
 {
     Quux quux;
-    return (quux.quuxifier() == quux.get_version());
+    return (quux.quuxify() == quux.get_version());
 }
 }
 
@@ -25,7 +25,7 @@ main(int argc, char* argv[])
         throw std::runtime_error("test_construct failed");
     }
     if (!test_quuxifier()) {
-        throw std::runtime_error("test_quuxifier failed");
+        throw std::runtime_error("test_quuxify failed");
     }
 
     return 0;
