@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "quux.h"
 #include "quux_version.h"
 #include "garply/garply.h"
