@@ -6,7 +6,7 @@ set(QUUX_VERSION_PATCH 1)
 set(QUUX_VERSION 
     "${QUUX_VERSION_MAJOR}.${QUUX_VERSION_MINOR}.${QUUX_VERSION_PATCH}")
 
-find_package(Garply 1.0 EXACT REQUIRED CONFIG)
+find_package(Garply 1.0.1 EXACT REQUIRED CONFIG)
 include_directories(${GARPLY_INCLUDE_DIR})
 link_directories(${GARPLY_LIB_DIR})
 
