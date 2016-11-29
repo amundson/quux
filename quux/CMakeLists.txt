@@ -7,7 +7,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 add_library(quux SHARED quux.cc quux.h)
 target_link_libraries(quux garply)
 
-install(TARGETS quux DESTINATION ${LIB_INSTALL_DIR})
+install(TARGETS quux DESTINATION ${CMAKE_INSTALL_LIBDIR})
 install(FILES
         quux.h
-        DESTINATION ${INCLUDE_INSTALL_DIR}/quux)
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quux)
