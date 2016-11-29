@@ -1,12 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(QUUX)
-set(QUUX_VERSION_MAJOR 1)
-set(QUUX_VERSION_MINOR 0)
-set(QUUX_VERSION_PATCH 3)
-set(QUUX_VERSION 
-    "${QUUX_VERSION_MAJOR}.${QUUX_VERSION_MINOR}.${QUUX_VERSION_PATCH}")
+project(QUUX VERSION 2.0.0)
 
-find_package(Garply 1.0.1 EXACT REQUIRED CONFIG)
+find_package(Garply 2.0.0 EXACT REQUIRED CONFIG)
 include_directories(${GARPLY_INCLUDE_DIR})
 link_directories(${GARPLY_LIB_DIR})
 
