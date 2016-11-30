@@ -5,7 +5,6 @@ find_package(Garply 2.0.0 EXACT REQUIRED CONFIG)
 
 include(GNUInstallDirs)
 
-include_directories(BEFORE ${QUUX_SOURCE_DIR})
 enable_testing()
 
 include(CMakePackageConfigHelpers)
