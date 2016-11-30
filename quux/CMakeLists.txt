@@ -12,7 +12,9 @@ target_include_directories(quux BEFORE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>)
 target_link_libraries(quux garply::garply)
 
-install(TARGETS quux DESTINATION ${CMAKE_INSTALL_LIBDIR})
+install(TARGETS quux
+        EXPORT QuuxTargets 
+        DESTINATION ${CMAKE_INSTALL_LIBDIR})
 install(FILES
         quux.h
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quux)

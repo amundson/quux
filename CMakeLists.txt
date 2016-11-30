@@ -22,6 +22,9 @@ write_basic_package_version_file(
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/QuuxConfig.cmake
               ${CMAKE_CURRENT_BINARY_DIR}/QuuxConfigVersion.cmake
               DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/quux)
+install(EXPORT QuuxTargets
+        NAMESPACE quux::
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/quux)
 
 add_subdirectory(quux)
 add_subdirectory(tests)
