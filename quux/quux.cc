@@ -1,15 +1,13 @@
+#include "quux.h"
+#include "garply/garply.h"
+#include "quux_version.h"
 #include <iostream>
 #include <stdexcept>
-#include "quux.h"
-#include "quux_version.h"
-#include "garply/garply.h"
 
 const int Quux::version_major = quux_version_major;
 const int Quux::version_minor = quux_version_minor;
 
-Quux::Quux()
-{
-}
+Quux::Quux() {}
 
 int
 Quux::get_version() const
@@ -21,14 +19,14 @@ int
 Quux::quuxify() const
 {
     int quux_version = get_version();
-    std::cout << "Quux::quuxify version " << quux_version
-              << " invoked\n";
+    std::cout << "Quux::quuxify version " << quux_version << " invoked\n";
 
     Garply garply;
     int garply_version = garply.garplinate();
 
-    if(garply_version != quux_version) {
-        throw std::runtime_error("Quux found an incompatible version of Garply.");
+    if (garply_version != quux_version) {
+        throw std::runtime_error(
+            "Quux found an incompatible version of Garply.");
     }
 
     return quux_version;

@@ -16,7 +16,7 @@ test_quuxifier()
     Quux quux;
     return (quux.quuxify() == quux.get_version());
 }
-}
+} // namespace
 
 int
 main(int argc, char* argv[])
