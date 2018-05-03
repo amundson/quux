@@ -11,5 +11,16 @@ target_include_directories(quux
                            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>)
 target_link_libraries(quux garply::garply)
 
-install(TARGETS quux EXPORT QuuxTargets DESTINATION ${CMAKE_INSTALL_LIBDIR})
+add_executable(quuxifier quuxifier.cc)
+target_include_directories(quux
+                           BEFORE
+                           PUBLIC
+                           $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}>
+                           $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+                           PRIVATE
+                           $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>)
+target_link_libraries(quuxifier quux)
+
+install(TARGETS quux quuxifier
+        EXPORT QuuxTargets DESTINATION ${CMAKE_INSTALL_LIBDIR})
 install(FILES quux.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quux)
