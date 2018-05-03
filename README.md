@@ -1,4 +1,11 @@
 # quux
 The quux toy package.
-quux depends on garply.
+
+* Provides
+    * Library: `libquux`
+    * Executable: `quuxifier`
+
+* Dependencies
+    * garply, [https://github.com/amundson/garply]()
+
 
