@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(QUUX VERSION 2.0.0)
+project(QUUX VERSION 3.0.0)
 
-find_package(Garply 2.0.0 EXACT REQUIRED CONFIG)
+find_package(Garply 3.0.0 EXACT REQUIRED CONFIG)
 
 include(GNUInstallDirs)
 
