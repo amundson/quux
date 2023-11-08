@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.5.0)
 project(QUUX VERSION 3.0.0)
 
 find_package(Garply 3.0.0 EXACT REQUIRED CONFIG)
