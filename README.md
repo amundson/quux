@@ -6,6 +6,6 @@ The quux toy package.
     * Executable: `quuxifier`
 
 * Dependencies
-    * garply, [https://github.com/amundson/garply]()
+    * garply, [https://github.com/amundson/garply](https://github.com/amundson/garply)
 
 
